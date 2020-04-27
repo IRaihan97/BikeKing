@@ -1,0 +1,288 @@
+body{
+	margin:0px;
+	padding:0px;
+	background-image: url("http://eskipaper.com/images/bmx-wallpapers-2.jpg");/* Background of the whole body is an image */
+    background-repeat: no-repeat;/* Makes sure that image is not repeated to fill out the entire webpage*/
+    background-attachment: fixed;/*Image does not scroll with the page and remains fixed*/
+	background-size: cover;/*The image covers the whole screen */
+	font:0.8em impact, sans-serif;/*This is the overall size and font style of the website*/
+	}
+
+/*Image is floated to the left of the header and margin is created to have space between the title*/
+#logo{
+	float:left;
+	margin-right:10px; }
+	
+/* Formatting of the tile on the header*/
+.title{
+	color:#FF6600;
+	font-size:40px; }
+
+	
+/* Formatting of the subtitle on the header*/
+.subtitle{
+	color:#ffffff;
+	font-size:20px; }
+
+	
+/* Allows the title and the subtitle to be aligned on the centre vertically*/
+.title, .subtitle{
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+
+/*Declaration for the container of every section that will be used to create the website */
+#wholepage{
+	width:1000px; /* Limits the length of the website content in terms of width */
+	margin-left:auto; /* Centrers the overall container of the web page */
+	margin-right:auto;}
+
+/* Adds margin to the image inside the header section  on html */
+header img{
+	margin-left:20px; }
+
+/*Declaration for the header of the page */	
+header{
+	width:100%;/*width of the header will be 100% of the #wholepage container */	
+	height: 95px;/* Height has been added to make the space between the logo and the header borders look even */	
+	background-color:#4d4d4d;
+	padding-top:20px;
+	padding-bottom:20px;
+	margin-bottom: 20px;
+	}
+/*Image is floated to the left of the header and margin is created to have space between the title*/
+#logo{
+	float:left;
+	margin-right:10px; }
+
+/* Declaration for the navigation section of the website */
+nav{
+	background-color:#f2f2f2;
+	width:140px;
+	float:left; /*this section appears on the left of the webpage */
+	margin-top:20px;
+	margin-bottom: 20px;
+	}
+
+/*This solves an issue where each list item appear outside of the container */
+ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+h1{
+	color:#FF6600;
+	font-size:2em; }
+
+/*Declaration Block for each list item of the navigation section*/	
+.nav_li{
+	width: 120px; 
+	height: 30px;
+	float:left;
+	background-color: #4d4d4d; /* This will fill the container with color */
+	display: inline;
+	margin: 10px;
+}	
+
+/*Declaration block for the text inside each item list */
+.li_text{
+	color:#FF6600;
+	text-align: center;
+	font-size: 15px;
+	/* The following declaration block is used to center the text inside the navigation blocks in terms of vertical alignment*/
+	margin: auto;
+    width: 60%;
+	padding: 5px;
+}
+
+/*Pseudo class is used to change the Div element containing each navigation link*/
+.nav_li:hover{
+	background: #000000; /*Background color of the container will change to black on hover */
+}
+/* Declaration for the banner */
+#banner {
+	margin-left: 100px; /* Centers the banner on the page*/
+}
+
+/*Declaration of the main section of the webpage */
+main{
+	background-color:#f2f2f2;
+	width:600px;
+	float:left;
+	padding:10px;
+	text-align: center;
+	margin: 20px; 
+	}
+	
+/* Declaration for the weekly offer  that appear on the main section container */
+#w-temp_offer{
+	width:98%;
+	float: left;
+	display: inline;
+	padding: 5px;
+	border:1px solid;
+	margin-bottom: 10px;
+	
+}
+
+/* Declaration for the top section of the weekly offer container*/
+.w-top_section{
+	width:100%;
+	height: 20px;
+	background-color: red;
+	text-align: left;
+}	
+
+/*Defines the properties Inside the top container of the weekly offer container */
+.w-tops_text{
+	color: #ffffff;
+	margin-left: 5px;
+}
+	
+/*Declaration used to define the properties of each offer */
+.week_offer{
+	width: 200px;
+	padding: 10px;
+	border: 1px solid;
+	text-align: center;
+	float:left;
+	display: inline;
+	margin-left: 48px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/*Declaration for the container of the "On Sale " Products*/
+.on_sale{
+	width: 250px;
+	margin: 13px;
+	border: 1px solid;
+	float: left;
+	display: inline;
+	padding: 10px;
+	position: relative; /*Relatively positioned to add a sale banner on the top right corner */
+	
+}
+
+/*Sale banner declaration that will appear on the on sale sections */
+.sale_banner{
+	position: absolute; /*Absolutely positioned to the parent container*/
+	top: 10px;
+	right: -20px;/*The banner will appear on the top corner and will go slightly out of the parent container */
+}
+
+/*Declaration for the text that describes the on sale product */
+.description{
+	border: 1px solid;
+	font-size: 10px;
+}
+
+
+/*Declaration for feedback form container */
+.feedback_tbl{
+	float: left;
+	display:inline;
+	margin-left: 70px; /*Centered the feedback form on the page using margin */
+	
+}
+
+
+#comment {
+	vertical-align: top; /*This had to be used to align "comment" on the table cell, doing through HTML gave an error*/
+}
+
+/*Declaration for the address container*/
+#address{
+	width: 150px;
+	float: left;
+	display: inline;
+	text-align: left;
+	padding-left: 20px;
+	margin-left: 30px;
+}
+
+/*Declaration for the map container */
+#location{
+	float: left;
+	display: inline;
+	margin-left: 40px;
+}
+
+/*Declaration for the image container of the location */
+#map{
+	border: 1px solid; /*Added border around the map image*/
+}
+
+
+/*Declaration for the container of every daily offer on the right side of the page*/
+#d-temp_offer{
+	background-color: #f2f2f2;
+	width:200px;
+	float:left;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	}
+
+/*Declaration for each daily offer container */
+.day_offer{
+	width: 85%;
+	padding: 5px;
+	margin: 10px;
+	border: 1px solid;
+	text-align: center;
+	
+}
+
+/*Declaration  of the top section of the daily offer container */ 
+.top_section{
+	width:100%;
+	height: 20px;
+	background-color: #4d4d4d;
+	text-align: left;
+}
+
+/*Declaration for the image in each daily offer container */
+.image_offer{
+	border: 1px solid;
+}
+
+/*Declaration for the text appearing on the top section*/
+.tops_text{
+	color: #ffffff;
+	margin-left: 5px;
+}
+
+/*Declration for the price of every offer container including weekly offer and on sale */
+.price{
+	margin-right:10px;
+	text-align: right;
+}
+
+
+/*Declaration of the footer section*/
+footer{
+	width:100%;
+	height: 100px;
+	background-color:#4d4d4d;
+	clear:both;
+}
+
+/*Declaration of the container containing each social media icons*/
+#socialmedia{
+	float: right;/*icons are floated to the right of the container*/
+}
+
+/*Declaration for each social media icon*/
+.social_icon{
+	margin: 10px; /*Added space between each icon*/
+}
+
+/*Declaration for general link*/
+a {
+	text-decoration: none; /*No decorations are added to hyperlink (therefore no underlines)*/
+}
+
+
+
+
